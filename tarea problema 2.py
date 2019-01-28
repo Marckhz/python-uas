@@ -1,9 +1,6 @@
 
 
-
 def billetes():
-
-    
 
     try:
         
@@ -52,8 +49,6 @@ def billetes():
         
         else:
             print("solo se aceptan valores numeros positivos mayores que 1")
-
-
     except:
         return print("Solo se aceptan valores numericos positivos")
 
