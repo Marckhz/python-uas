@@ -1,4 +1,9 @@
+#/user/bin/python3
+
 import math
+
+#Hernandez Inzunza Marco Cesar 4-1
+
 
 print("#############################")
 print("### Ejercicio numero uno ###")
@@ -63,6 +68,7 @@ def num_finder():
     print("#############################")
     print("### Ejercicio numero Tres ###")
     print("##############################")
+    print("Presione Q para dejar de capturar y proceder a buscar el numero")
     
     vector = []
     loop_controler = False
