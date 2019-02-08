@@ -52,7 +52,7 @@ def dev_Stand(media, vector):
     return sqrt_
 
 def media_sqrt(vector):
-        
+
     cuad = []
     for elemento in range(len(vector)):
         elemento = vector[elemento] ** 2
@@ -64,6 +64,7 @@ def media_sqrt(vector):
     return media_cuad
 
 def num_finder():
+
     print("\n")
     print("#############################")
     print("### Ejercicio numero Tres ###")
@@ -79,12 +80,10 @@ def num_finder():
             if(vector[-1] == 'Q'):
                 loop_controler = True
         except ValueError as Error:
-            #print("ese valor no esta permitido")
             loop_controler = True 
     if loop_controler != True:
         return "ese no esta permitido"
     else:
-            #loop_controler == True:
         to_find = float(input("Que numero desea buscar? > "))
         appeard = vector.count(to_find)
 
