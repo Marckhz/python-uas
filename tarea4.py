@@ -1,4 +1,4 @@
-
+#Escribir respuesta en un archivo CSV
 
 #Mes posicion 1, los meses estan guardados como numericos del 1 a 12
 #Numero de vuelo
@@ -80,33 +80,32 @@ def ejercicio_2():
 	hour = increment // 60
 	minutes = increment % 60
 	print("el numero de vuelo es > {} con un retraso de {} horas y {} minutos".format(
-			numero_vuelo, hour, minutes))
+	         numero_vuelo, hour, minutes))
 
-i = 0
-yes = 0
-no = 0
-for line in lines:
-	i+=1
-	if i > 1:
-		header = line
-		str_ = header.split(',')
-		#this_index = str_[22]
-		print(type(str_[21]))
-		
-		if str_[21] == '0': 
-			#yes+=1
-			no+=1
-		if str_[21] =='1':
-			yes+=1
-	if i > 1000:
-		break	
-	#print(header)
-	#break
-print(yes)
-print(no)
+def ejercicio_3():
 
+  i = 0
+  yes = 0
+  no = 0
+  mes = input("numero de mes ")
+  dia_mes = input("dia del mes ")
+
+  for line in lines:
+  	i+=1
+  	if i > 1:
+  		header = line
+  		str_ = header.split(',')
+  		if '1' in str_[21] and mes in str_[1] and dia_mes in str_[2]:
+  			yes+=1
+  		elif '1' in str_[21] and  mes in str_[1]:
+  			yes+=1
+  		elif '1' in str_[21]:
+  			yes+=1
+
+  print("cantidad de vuelos cancelados ", yes)
 
 archivo.close()
 
 #if __name__ == '__main__':
 #	ejercicio_2()
+#6642
