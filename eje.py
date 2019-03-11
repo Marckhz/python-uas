@@ -1,5 +1,6 @@
 import csv
 
+"""
 arch_csv = open('empleados.csv')
 entry = csv.DictReader(arch_csv)
 
@@ -30,3 +31,38 @@ print("Process done")
 outCSV.close()
 outCSV_2.close()
 del outCSV
+"""
+
+
+
+csv_file = open('paises.csv')
+entry  = csv.DictReader(csv_file)
+
+#csv_outFile = open('paises_poblacion_superficie.csv', 'w')
+#write_in_csv = csv.writer('csv_outFile', delimiter = ',')
+
+print('Reading\n')
+
+continent_input = input('Ingrese Continente')
+country_code = input('country_code')
+# SurfaceArea Continent
+#Name
+#'\ufeffCode' ABW
+
+
+
+
+
+for line in entry:
+	#if continent_input in (line['Continent']):
+	#	print(line['SurfaceArea'], line['Population'])
+	
+	#if continent_input in (line['Continent']):
+	#	print(line['Name'])
+	if continent_input in (line['\ufeffCode']):
+		print(line[continent_input])	
+
+print('Done')
+
+csv_file.close()
+#csv_outFile.close()
