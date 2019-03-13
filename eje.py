@@ -33,7 +33,13 @@ outCSV_2.close()
 del outCSV
 """
 
+class Perro():
 
+	def ladrar(self):
+
+		return print("wuaua")
+
+"""
 
 csv_file = open('paises.csv')
 entry  = csv.DictReader(csv_file)
@@ -59,10 +65,11 @@ for line in entry:
 	
 	#if continent_input in (line['Continent']):
 	#	print(line['Name'])
-	if continent_input in (line['\ufeffCode']):
+	if c in (line['\ufeffCode']):
 		print(line[continent_input])	
 
 print('Done')
 
 csv_file.close()
 #csv_outFile.close()
+"""
