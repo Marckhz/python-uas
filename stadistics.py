@@ -33,9 +33,6 @@ print(stats.variance(city_population))
 print(stats.median(city_population))
 
 
-
-
-
 print(city_population)
 
 
